@@ -5,8 +5,7 @@ const logger = winston.createLogger({
     level: 'debug',
     transports: [
         new winston.transports.DailyRotateFile({ filename: 'console-%DATE%.log', level: 'info' }),
-        new winston.transports.Console({ level: 'info' }),
-        new winston.transports.File({ level: 'debug'})
+        new winston.transports.Console({ level: 'error' }),
     ],
     format: winston.format.simple()
 });
