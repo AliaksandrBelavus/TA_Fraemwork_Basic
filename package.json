@@ -1,10 +1,10 @@
 {
   "name": "webdriverjs_patterns",
   "version": "1.0.0",
-  "description": "Home Task for Module Design Patterns",
+  "description": "Home Task for Module TA Frameworks Layers Runner Business Objects",
   "main": "index.js",
   "scripts": {
-    "postinstall": "webdriver-manager update --versions.standalone=3.4.0",
+    "postinstall": "webdriver-manager update --versions.standalone=3.5.3",
     "test": "protractor ./test/config/protractor.config.js --disableChecks"
   },
   "author": "Aliaksandr Belavus",
@@ -14,9 +14,8 @@
     "decache": "^4.6.1",
     "mocha": "^9.1.3",
     "protractor": "^7.0.0",
-    "selenium-webdriver": "^4.1.0"
-  },
-  "dependencies": {
+    "selenium-webdriver": "^4.1.0",
+    "jasmine-spec-reporter": "^7.0.0",
     "winston": "^3.3.3",
     "winston-daily-rotate-file": "^4.5.5"
   }
