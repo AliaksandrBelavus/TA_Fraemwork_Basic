@@ -5,11 +5,9 @@ class BasePage {
   constructor() {
     this.Header = new Header();
   }
-  wait(waitInMilliseconds) {
-    return browser.sleep(waitInMilliseconds);
-  }
-  open(url) {
-    return browser.get(url);
+  open() {
+    logger.info(`Opening "${this.url}" url`);
+    browser.get(this.url);
   }
 }
 
